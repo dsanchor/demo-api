@@ -65,3 +65,17 @@ curl -X PUT http://localhost:8080/api/v1/users/1 \
 ```shell
 curl -X DELETE http://localhost:8080/api/v1/users/1
 ```
+
+## Dockerization
+
+### Create a docker image
+
+```shell
+docker build -t user-api .
+```
+
+### Run container from the image
+
+```shell
+docker run -p 8080:8080 user-api
+```
